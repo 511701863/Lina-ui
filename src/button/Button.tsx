@@ -14,6 +14,8 @@ export type IColor =
   | "pink";
 //大小1
 export type ISize = "small" | "medium" | "large";
+//边框颜色
+export type borderColor = "red" | "green" ;
 export const props = {
   size: {
     type: String as PropType<ISize>,
