@@ -42,6 +42,11 @@
     "vitepress-theme-demoblock": "1.4.2",
     "vitest": "0.21.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"          
+    }
+  },
   "dependencies": {
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
