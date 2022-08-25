@@ -123,7 +123,7 @@ describe("Button", () => {
       expect(wrapper.classes().includes("bg-red-500")).toBe(true);
     });
   });
-  //圆角
+  //圆角1
   describe("round", () => {
     test("default", () => {
       const wrapper = shallowMount(Button, {
