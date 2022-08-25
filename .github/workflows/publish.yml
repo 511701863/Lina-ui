@@ -2,7 +2,7 @@ name: Publish LinaUi To Npm
 
 on:
   push:
-    branches: [publish-smarty-ui-vite]
+    branches: [master]
 jobs:
   publish:
     runs-on: ubuntu-latest
