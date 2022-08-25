@@ -12,7 +12,7 @@ export type IColor =
   | "indigo"
   | "purple"
   | "pink";
-//大小1
+//大小
 export type ISize = "small" | "medium" | "large";
 //边框颜色
 export type borderColor = "red" | "green" ;
