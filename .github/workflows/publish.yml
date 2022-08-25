@@ -1,4 +1,4 @@
-name: Publish Smarty-ui-vite To Npm
+name: Publish LinaUi To Npm
 
 on:
   push:
