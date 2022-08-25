@@ -21,11 +21,13 @@ export default defineConfig({
                 assetFileNames:"[name].[ext]"
             }
         },
-        minify:false,
+        minify:'terser', // boolean | 'terser' | 'esbuild' pnpm i terser@"5.4.0" -D
+        sourcemap: true, // 输出单独 source文件 Chrome 调试工具中进行断点调试
+        brotliSize: true,  // 生成压缩大小报告
         cssCodeSplit: true,
         lib:{
             entry:'./src/entry.ts',
-            name:'Lina-ui',
+            name:'LinaUi',
             fileName:'lina-ui',
             formats:["es",'umd','iife']
         }

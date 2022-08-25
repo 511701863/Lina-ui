@@ -1,65 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../dist/entry.css">
-</head>
-<body>
-    <h1>Demo</h1>
-    <div id="app"></div>
-    <script type="module">
-        import {createApp} from 'vue/dist/vue.esm-bundler.js'
-        import LinaUI,{LButton,SFCButton,JSXButton} from '../../dist/lina-ui.mjs'
-        console.log(LinaUI,333);
-        // createApp({
-        //     template :`
-        //     <LButton/>
-        //     <SFCButton/>
-        //     <JSXButton/>
-        //     `
-        // }).use(LinaUI).mount('#app')
-        createApp({
-            template :`
-            <div style="margin-bottom:20px;">
-            <SFCButton color="blue">主要按钮</SFCButton>
-            <SFCButton color="green">绿色按钮</SFCButton>
-            <SFCButton color="gray">灰色按钮</SFCButton>
-            <SFCButton color="yellow">黄色按钮</SFCButton>
-            <SFCButton color="red">红色按钮</SFCButton>
+<h1>Demo IFFE</h1>
+<div id="app"></div>
+<link rel="stylesheet" href="../../dist/entry.css">
+<script src="../../node_modules/vue/dist/vue.global.js"></script>
+<script src="../../dist/lina-ui.iife.js"></script>
+<script>
+    console.log('111')
+    const { createApp } = Vue
+    console.log('vue', Vue)
+    console.log('LinaUi',LinaUi)
+    createApp({
+        template: `
+        <div style="margin-bottom:20px;">
+            <LButton color="blue">主要按钮</LButton>
+            <LButton color="green">绿色按钮</LButton>
+            <LButton color="gray">灰色按钮</LButton>
+            <LButton color="yellow">黄色按钮</LButton>
+            <LButton color="red">红色按钮</LButton>
+        </div>
+        <div style="margin-bottom:20px;"
+        >
+            <LButton color="blue" plain>朴素按钮</LButton>
+            <LButton color="green" plain>绿色按钮</LButton>
+            <LButton color="gray" plain>灰色按钮</LButton>
+            <LButton color="yellow" plain>黄色按钮</LButton>
+            <LButton color="red" plain>红色按钮</LButton>
         </div>
         <div style="margin-bottom:20px;">
-            <SFCButton color="pink" plain>粉色按钮</SFCButton>
-            <SFCButton color="blue" plain>主要按钮</SFCButton>
-            <SFCButton color="green" plain>绿色按钮</SFCButton>
-            <SFCButton color="gray" plain>灰色按钮</SFCButton>
-            <SFCButton color="yellow" plain>黄色按钮</SFCButton>
-            <SFCButton color="red" plain>红色按钮</SFCButton>
+            <LButton size="small" plain>小按钮</LButton>
+            <LButton size="medium" plain>中按钮</LButton>
+            <LButton size="large" plain>大按钮</LButton>
         </div>
         <div style="margin-bottom:20px;">
-            <SFCButton color="pink" size="small">粉色按钮</SFCButton>
-            <SFCButton color="pink">粉色按钮</SFCButton>
-            <SFCButton color="pink" size="large">粉色按钮</SFCButton>
+            <LButton color="blue" round plain icon="search">搜索按钮</LButton>
+            <LButton color="green" round plain icon="edit">编辑按钮</LButton>
+            <LButton color="gray" round plain icon="check">成功按钮</LButton>
+            <LButton color="yellow" round plain icon="message">提示按钮</LButton>
+            <LButton color="red" round plain icon="delete">删除按钮</LButton>
         </div>
         <div style="margin-bottom:20px;">
-            <SFCButton color="pink" plain round>粉色按钮</SFCButton>
-            <SFCButton color="blue" plain round>主要按钮</SFCButton>
-            <SFCButton color="green" plain round>绿色按钮</SFCButton>
-            <SFCButton color="gray" round>灰色按钮</SFCButton>
-            <SFCButton color="yellow" round>黄色按钮</SFCButton>
-            <SFCButton color="red" round>红色按钮</SFCButton>
+            <LButton color="blue" round plain icon="search"></LButton>
+            <LButton color="green" round plain icon="edit"></LButton>
+            <LButton color="gray" round plain icon="check"></LButton>
+            <LButton color="yellow" round plain icon="message"></LButton>
+            <LButton color="red" round plain icon="delete"></LButton>
         </div>
-        <div style="margin-bottom:20px;">
-            <SFCButton color="blue" icon="search"></SFCButton>
-            <SFCButton color="green" icon="edit"></SFCButton>
-            <SFCButton color="gray" icon="account-circle"></SFCButton>
-            <SFCButton color="yellow" icon="local-play"></SFCButton>
-            <SFCButton color="red" icon="liquor" round></SFCButton>
-        </div>
-            `
-        }).component('SFCButton',SFCButton).component(JSXButton.name,JSXButton).component(LButton.name,LButton).mount('#app')
-    </script>
-</body>
-</html>
+    `}).use(LinaUi.default).mount('#app')
+</script>
