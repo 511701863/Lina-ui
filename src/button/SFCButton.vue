@@ -36,7 +36,7 @@ export type IColor =
   | "indigo"
   | "purple"
   | "pink";
-//大小
+//大小三种
 export type ISize = "small" | "medium" | "large";
 defineProps({
   size: {
