@@ -1,18 +1,8 @@
+/// <reference types="vitest" />
 import { defineConfig } from'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import Unocss from './config/unocss'
-const rollupOptions={
-    external:['vue','vue-router'],
-    output:{
-        globals:{
-            vue:'Vue'
-        },
-        extend:true,
-        exports:"named",
-        assetFileNames:"[name].[ext]"
-    }
-}
 export default defineConfig({
     plugins:[
         vue(),
@@ -20,7 +10,17 @@ export default defineConfig({
         Unocss()
     ],
     build:{
-        rollupOptions,
+        rollupOptions:{
+            external:['vue','vue-router'],
+            output:{
+                globals:{
+                    vue:'Vue'
+                },
+                extend:true,
+                exports:"named",
+                assetFileNames:"[name].[ext]"
+            }
+        },
         minify:false,
         cssCodeSplit: true,
         lib:{
@@ -29,5 +29,13 @@ export default defineConfig({
             fileName:'lina-ui',
             formats:["es",'umd','iife']
         }
-    }
+    },
+    test:{
+        globals: true,
+        environment: 'happy-dom',
+        // 支持tsx组件!!!!
+        transformMode: {
+            web: [/.[tj]sx$/]
+          }
+    },
 })
