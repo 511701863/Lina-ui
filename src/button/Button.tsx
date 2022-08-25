@@ -12,7 +12,7 @@ export type IColor =
   | "indigo"
   | "purple"
   | "pink";
-//大小
+//大小1
 export type ISize = "small" | "medium" | "large";
 export const props = {
   size: {
