@@ -51,3 +51,4 @@ fix(common): 修复字体过小的BUG，将通用管理下所有页面的默认�
 # 示例3
 fix: value.length -> values.length
 ```
+#simple-git-hooks 考虑使用这个  husky有点难搞
