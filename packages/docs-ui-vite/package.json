@@ -1,0 +1,17 @@
+{
+  "name": "docs-ui-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lina-ui-vite": "0.0.0-7cf9b4f",
+    "smarty-ui-vite": "0.0.0-0f05d2c",
+    "vue": "^3.2.37"
+  }
+}
