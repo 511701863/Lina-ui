@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "node ./scripts/preinstall.js"
+    "preinstall": "node ./scripts/preinstall.js",
+    "prepare": "cd .. && husky install superjsonweb/.husky"
   },
   "author": "",
   "license": "ISC",
