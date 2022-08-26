@@ -5,7 +5,6 @@
   "main": "commitlint.config.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepare": "npx husky install",
     "build:docs": "pnpm --filter lina-ui-vite docs:build",
     "docs:dev": "pnpm --filter lina-ui-vite docs:dev"
   },
