@@ -8,7 +8,7 @@
 
 ```
 ├── config               # 配置文件
-├── coverage             # 覆盖率报告
+├── coverage             # 覆盖率报告test
 ├── demo                 # 代码范例
 ├── docs                 # 文档
 ├── node_modules  
