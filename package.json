@@ -1,20 +1,24 @@
 {
-  "name": "lina-ui-vite",
+  "name": "smarty-admin-monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "preinstall": "node ./scripts/preinstall.js",
-    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/su37josephxia/smarty-admin.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "husky": "^7.0.4"
+  "bugs": {
+    "url": "https://github.com/su37josephxia/smarty-admin/issues"
   },
+  "homepage": "https://github.com/su37josephxia/smarty-admin#readme",
   "dependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
-    "vite": "^3.0.9"
+    "vite": "^3.0.4"
   }
 }
