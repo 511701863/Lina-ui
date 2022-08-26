@@ -1,6 +1,6 @@
 # Lina-UI
 <p align="center">
-    <a>
+    <a href='https://github.com/511701863/Lina-ui/actions/workflows/main.yml'>
         <img src="https://github.com/511701863/Lina-ui/actions/workflows/main.yml/badge.svg?branch=master" alt="CI">
     </a>
 </p>
