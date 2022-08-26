@@ -1,5 +1,9 @@
 # Lina-UI
-
+<p align="center">
+    <a>
+        <img src="https://github.com/511701863/Lina-ui/actions/workflows/main.yml/badge.svg?branch=master" alt="CI">
+    </a>
+</p>
 ## 项目目录结构
 
 ```
