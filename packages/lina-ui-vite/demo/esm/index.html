@@ -1,13 +1,14 @@
 <h1>Demo IFFE</h1>
 <div id="app"></div>
+<meta charset="UTF-8">
 <link rel="stylesheet" href="../../dist/entry.css">
 <script src="../../node_modules/vue/dist/vue.global.js"></script>
-<script src="../../dist/lina-ui.iife.js"></script>
+<script src="../../dist/button/index.iife.js"></script>
 <script>
     console.log('111')
     const { createApp } = Vue
     console.log('vue', Vue)
-    console.log('LinaUi',LinaUi)
+    console.log('LinaUi',button)
     createApp({
         template: `
         <div style="margin-bottom:20px;">
@@ -44,5 +45,5 @@
             <LButton color="yellow" round plain icon="message"></LButton>
             <LButton color="red" round plain icon="delete"></LButton>
         </div>
-    `}).use(LinaUi.default).mount('#app')
+    `}).use(button.default).mount('#app')
 </script>

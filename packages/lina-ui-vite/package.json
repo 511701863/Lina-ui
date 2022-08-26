@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./scripts/build.ts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
@@ -45,6 +47,7 @@
   "dependencies": {
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
+    "fs-extra": "^10.1.0",
     "typescript": "^4.7.4",
     "vue": "3.2.37"
   }
