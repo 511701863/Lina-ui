@@ -43,9 +43,6 @@
     "vitepress-theme-demoblock": "1.4.2",
     "vitest": "0.21.1"
   },
-  "publishConfig" : {
-    "registry":"http://42.194.152.142/"
-  },
   "readmeFilename":"README.md",
   "dependencies": {
     "@commitlint/cli": "17.0.2",
