@@ -1,16 +1,24 @@
 {
   "name": "lina-ui-vite",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "<br>",
+  "main": "commitlint.config.js",
   "scripts": {
-    "preinstall": "node ./scripts/preinstall.js"
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "npx husky install",
+    "build:docs": "pnpm --filter lina-ui-vite docs:build",
+    "docs:dev": "pnpm --filter lina-ui-vite docs:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/511701863/Lina-ui"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/511701863/Lina-ui/issues"
+  },
   "dependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "vite": "^3.0.9"
+    "vite": "^3.0.7"
   }
 }
