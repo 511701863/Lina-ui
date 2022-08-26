@@ -4,19 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "node ./scripts/preinstall.js",
-    "prepare": "husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/su37josephxia/smarty-admin.git"
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/su37josephxia/smarty-admin/issues"
-  },
-  "homepage": "https://github.com/su37josephxia/smarty-admin#readme",
   "devDependencies": {
     "husky": "^7.0.4"
   },
