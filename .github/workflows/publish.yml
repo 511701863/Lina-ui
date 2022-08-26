@@ -1,13 +1,17 @@
-name: Publish LinaUi To Npm
+name: Publish lina-ui-vite To Npm
 
 on:
   push:
-    branches: [main]
+    branches: [publish-lina-ui-vite]
+
 jobs:
   publish:
     runs-on: ubuntu-latest
+
     name: "publish npm"
+
     environment: npm
+
     steps:
       - uses: actions/checkout@master
       - uses: pnpm/action-setup@v2.1.0
@@ -16,7 +20,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Build
-        run: npm run build
+        run:  npm run build
       - name: "Publish to the npm registry"
         uses: primer/publish@3.0.0
         env:
