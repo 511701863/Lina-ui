@@ -2,7 +2,7 @@ name: Publish lina-ui-vite To Npm
 
 on:
   push:
-    branches: [publish-lina-ui-vite]
+    branches: [master]
 
 jobs:
   publish:
@@ -20,7 +20,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Build
-        run:  npm run build
+        run:  pnpm build
       - name: "Publish to the npm registry"
         uses: primer/publish@3.0.0
         env:
