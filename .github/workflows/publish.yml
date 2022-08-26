@@ -19,6 +19,8 @@ jobs:
           version: 6.31.0
       - name: Install modules
         run: pnpm install
+      - name: Install modules
+        run: cd packages/lina-ui-vite && pnpm install
       - name: Build
         run:  cd packages/lina-ui-vite && npm run build
       - name: "Publish to the npm registry"
