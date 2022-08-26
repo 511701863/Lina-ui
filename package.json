@@ -1,6 +1,6 @@
 {
   "name": "lina-ui-vite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -42,6 +42,9 @@
     "vitepress": "0.22.4",
     "vitepress-theme-demoblock": "1.4.2",
     "vitest": "0.21.1"
+  },
+  "publishConfig" : {
+    "registry":"http://42.194.152.142/"
   },
   "readmeFilename":"README.md",
   "dependencies": {
