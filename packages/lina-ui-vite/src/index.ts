@@ -2,13 +2,13 @@
 // console.log(s);
 // import LButton from './button'
 // import SFCButton from './button/SFCButton.vue'
-import JSXButton from './button/JSXButton.jsx'
-import {createApp} from 'vue/dist/vue.esm-bundler.js'
-import LinaUi from './entry'
-console.log(LinaUi,1234);
+import JSXButton from "./button/JSXButton.jsx";
+import { createApp } from "vue/dist/vue.esm-bundler.js";
+import LinaUi from "./entry";
+console.log(LinaUi, 1234);
 
 createApp({
-        template:`
+  template: `
         <div style="margin-bottom:20px;">
             <SFCButton color="blue">主要按钮</SFCButton>
             <SFCButton color="green">绿色按钮</SFCButton>
@@ -44,6 +44,7 @@ createApp({
             <SFCButton color="yellow" icon="local-play"></SFCButton>
             <SFCButton color="red" icon="liquor" round></SFCButton>
         </div>
-        `
-    }).use(LinaUi).mount("#app")
-
+        `,
+})
+  .use(LinaUi)
+  .mount("#app");
